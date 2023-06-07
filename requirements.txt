@@ -1,0 +1,9 @@
+gunicorn
+dash
+psycopg2
+pandas
+dash
+dash_bootstrap_components
+psycopg2
+plotly
+pillow
