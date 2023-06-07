@@ -7,7 +7,7 @@ from dash import dcc,dash_table
 from dash import html as html
 import plotly.express as px
 import plotly.graph_objects as go
-
+import sys
 
 def get_values(nd,l,qd, largura, altura, fck, eci, lim):
 
@@ -322,6 +322,6 @@ server = screen.server
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        app.run_server(debug=False)
+        screen.run_server(debug=False)
     else:
-        app.run_server(debug=False)
+        screen.run_server(debug=False)
