@@ -320,6 +320,8 @@ def calcular(timestamp, data):
 
 server = screen.server
 
-
 if __name__ == "__main__":
-        screen.run_server(debug=True, port='8050')
+    if len(sys.argv) > 1:
+        app.run_server(debug=False)
+    else:
+        app.run_server(debug=False)
