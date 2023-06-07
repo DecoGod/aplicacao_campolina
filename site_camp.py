@@ -70,7 +70,7 @@ def get_values(nd,l,qd, largura, altura, fck, eci, lim):
         zetai = zeta1
 
     dicio_valores['tabela2'].append(delta_total)
-    dicio_valores['tabela2'].append(soma_deltamid * 10 ** (-2))
+    dicio_valores['tabela2'].append((mid + soma_deltamid) * 10 ** (-2))
 
 
     return dicio_valores
@@ -322,6 +322,6 @@ server = screen.server
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        screen.run_server(debug=False)
+        screen.run_server(debug=True)
     else:
-        screen.run_server(debug=False)
+        screen.run_server(debug=True)
